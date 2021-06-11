@@ -1,0 +1,36 @@
+fieldset{
+	width:60%;
+	border:none;
+	backdrop-filter:blur(8px);
+}
+p{
+	
+	font-weight: bold;
+	font-size: 30px;
+	font-family: lucida calligraphy;
+}
+body{
+	background-image: url(./images/farm_7.jpg);
+	background-size: cover;
+
+	
+}
+input{
+	padding: 15px;
+	font-size: 15px;
+	width:40%;
+	display: block;
+	float: middle;
+	border-color: black;
+	
+}
+#submit{
+	padding: 10px;
+	background-color: #00acee;
+	color: black;
+	font-size: 30px;
+	font-weight: bold;
+	width:30%;
+	border:none;
+	font-family: Times New Roman;
+}
