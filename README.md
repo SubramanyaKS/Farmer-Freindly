@@ -1,2 +1,7 @@
 # Farmer-Friendly
-This is the web project 
+This is ongoing web project.
+
+Creator:
+ViVek Srinivasan
+Subramanya K S
+Puneeth K S
