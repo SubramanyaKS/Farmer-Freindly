@@ -2,32 +2,114 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<link rel="stylesheet" href="./farmer.css">
-		<title>Sign Up</title>
+		<meta name="viewport" content="width=device-width initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+		<link rel="stylesheet" href="./farmer_signup.css">
 		<script type="text/javascript" src="./farmer_signup.js"></script>
+		<title>Sign Up</title>
+		
 	</head>
 	<body>	
-			<div class="row" align="center" >	
-				<form action="" method="post" name="form"><br/>
-						<fieldset>
-							<p>Sign Up Here ..!</p><br/>
-							<input type="text" name="name" id="name" placeholder="Name  (required)" align="right" required><br/>
-							
-							<input type="tel" name="phone no" id="phone" placeholder="Phone (+91)  (required)" required><br/>
-							
-							<input type="text" name="city" id="city" placeholder="City name  (required)" required=""><br/>
-							
-							<input type="text" name="state" id="state" placeholder="State name  (required)" required=""><br/>
-							
-							<input type="number" name="" id="pincode" placeholder="Pincode  (required)" required=""><br/>
-							
-							<input type="email" name="email" id="email" placeholder="Email  (optional)"><br/>
-							
-							<input type="Password" name="password" id="password" placeholder="Password (eg. A$5asdfg)  (required)" required=""><br/>
-							<input type="submit" name="submit" id="submit" value="Register" onclick="newuser()">
-						</fieldset>
-				</form>
-			</div>
+		<div class="row" align="center" >	
+			<form action="login.html" method="post" name="form"><br/>
+				<p>Sign Up Here ..!</p><br/>
+				<fieldset>
+						<h4 style="color:yellow;font-family: consolas;"><sup>*</sup>&nbsp;Required fields</h4>
+						<table>
+							<tr>
+								<td>
+									<label>Name<sup>*</sup></label>
+								</td>
+								<td>
+									<label>:</label>
+								</td>
+								<td>
+									<input type="text" name="name" id="name" placeholder="Your name" align="right" required><br/>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<label>Mobile<sup>*</sup></label>
+								</td>
+								<td>
+									<label>:</label>
+								</td>
+								<td>
+									<input type="tel" name="phone no" id="phone" placeholder="+91" required><br/>
+								</td>
+							</tr>	
+							<tr>
+								<td>
+									<label>City<sup>*</sup></label>
+								</td>
+								<td>
+									<label>:</label>
+								</td>
+								<td>
+									<input type="text" name="city" id="city" placeholder="City name" required=""><br/>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<label>State<sup>*</sup></label>
+								</td>
+								<td>
+									<label>:</label>
+								</td>
+								<td>
+									<input type="text" name="state" id="state" placeholder="State name" required=""><br/>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<label>Pincode<sup>*</sup></label>
+								</td>
+								<td>
+									<label>:</label>
+								</td>
+								<td>
+									<input type="digit" name="" id="pincode" placeholder="Pincode" required=""><br/>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<label>Email</label>
+								</td>
+								<td>
+									<label>:</label>
+								</td>
+								<td>
+									<input type="email" name="email" id="email" ><br/>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<label>Password<sup>*</sup></label>
+								</td>
+								<td>
+									<label>:</label>
+								</td>
+								<td>
+									<input type="password" minlength="8" name="password" id="password" placeholder="e.g  (As45as$@as) "required><span class="fa fa-eye eye-icon" id="togglePassword"></span><abbr title="Password should contain Uppar,lower case letters and special characters"><i class="fa fa-info-circle" style="color:white;margin-top: 20px;margin-right: -25px"></i></abbr><br/>
+								</td>
+							<script type="text/javascript" src="./farm_password.js"></script>
+							</tr>
+							<tr>
+								<td>
+									<label>Confirm Password<sup>*</sup></label>
+								</td>
+								<td>
+									<label>:</label>
+								</td>
+								<td>
+									<input type="password"id="confirm_password"><br/>
+								</td>
+							</tr>
+
+						</table>
+					<input type="submit" name="submit" id="submit" value="Register" onclick="newuser()">
+				</fieldset>
+			</form>
+		</div>
 	</body>
 </html>

@@ -7,6 +7,8 @@ function newuser()
 		var pin=document.getElementById("pincode").value;
 		var pass=document.getElementById("password").value;
 		var mail=document.getElementById("email").value;
+		var cpass=document.getElementById("confirm_password").value;
+		
 
 
 		var txtphone=document.form.phone.value;
@@ -16,30 +18,36 @@ function newuser()
 		var txtemail=document.form.email.value;
 		var emailtest=txtemail.match(/^[A-Za-z0-9]*@gmail.com$/);
 		var txtpassword=document.form.password.value;
-		var passtest=txtpassword.match(/^[A-Z][&*#$][0-9][a-z]{5}$/);
+		//var passtest=txtpassword.match(/^[A-Z]*[&*#$]*[0-9]*[a-z]*$/);
+		var passtest=txtpassword.match(/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[%$#@!*]).{8,20}$/);
+		
 
 		if(name==""||phone==""||city==""||state=="" || pin=="" || pass=="")
 		{
 			alert("Please Enter Required information");
 		}
-
-		
-		else if(txtphone!=phonetest)
-		{
-			alert("Invalid mobile number");
-		}
-		else if(txtpincode!=pintest)	
-		{
-			alert("Invalid Pincode");
-				
-		}
-		/*else if(mail!=null)
+		/* if(mail!=null)
 		{
 			if(txtemail!=emailtest){
 				alert("Invalid email id");
 			}
 		}*/
-		else if(txtpassword!=passtest)
+		
+		 if(txtphone!=phonetest)
+		{
+			alert("Invalid mobile number");
+		}
+		 if(cpass!=pass)
+		{
+			alert("Invalid password");
+			
+		}
+		 if(txtpincode!=pintest)	
+		{
+			alert("Invalid Pincode");
+				
+		}
+		 if(txtpassword!=passtest)
 		{
 			alert("Password should contain one uppercase letter,special char.and number");
 			

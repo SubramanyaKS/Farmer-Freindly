@@ -1,26 +1,26 @@
 fieldset{
 	width:60%;
 	border:none;
-	backdrop-filter:blur(8px);
+	backdrop-filter:blur(5px);
 }
 p{
-	
 	font-weight: bold;
-	font-size: 30px;
+	color: solid black;
+	font-size: 40px;
 	font-family: lucida calligraphy;
 }
 body{
-	background-image: url(./images/farm_7.jpg);
+	background-image: url(./farm2.jpg);
 	background-size: cover;
 
 	
 }
 input{
-	padding: 15px;
-	font-size: 15px;
-	width:40%;
+	padding: 6%;
+	font-size: 20px;
+	width:100%;
 	display: block;
-	float: middle;
+	border-radius: 5px;
 	border-color: black;
 	
 }
@@ -33,4 +33,23 @@ input{
 	width:30%;
 	border:none;
 	font-family: Times New Roman;
+}
+sup{
+	padding-left: 10px;
+	color:red;
+	font-weight: bold;
+}
+label{
+	font-size: 30px;
+	text-align: center;
+	font-weight: bold;
+}
+td{
+	padding:10px;
+}
+.eye-icon{
+	float: right;
+	margin-top: -35px;
+	margin-left: -30px
+ 	cursor: pointer;
 }
