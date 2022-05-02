@@ -40,7 +40,7 @@ function F_forgot()
 		if(txtphone==phonetest && txtpassword==passtest && cpass==pass)
 		{
 			alert("Password changed Succesfully");
-			window.location.href="login.html";
+			window.location.href='www.google.com';
 		}
 	}
 	}
